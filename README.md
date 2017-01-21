@@ -1,6 +1,6 @@
 # FinStock
 
-A script to download stock symbols and stocks data.
+A script to download stock symbols and stocks data in json or csv format.
 
 * AMEX
 * NASDAQ
@@ -12,8 +12,7 @@ Please review symbol.txt for symbols supported.
 # Requirements
 
 For this you will need:
-
-* Python 3 
+* Python 3
 * Postgresql 9 
 
 Python Modules
@@ -26,6 +25,7 @@ Python Modules
 
 ### Get source code from github
 ```bash
+git clone https://github.com/kennylim/FinStock.git
 ```
 
 ### Install required modules
@@ -57,14 +57,14 @@ python stock.py --type json  --out-dir /Volumes/ssd/data/aws-finance/json/ --sta
 python stock.py --type csv  --out-dir /Volumes/ssd/data/aws-finance/csv/ --start-date 2017-01-01 --end-date 2017-01-20
 ```
 
-Load csv file to postgresql
+Load csv file to database
 ```bash
 python load.py --type csv  --data-dir /Volumes/ssd/data/aws-finance/csv/
 ```
 
-Sync last updated stock up to today
+Synch database last update stock up to today
 ```bash
-python sync.py --type csv  --out-dir /Volumes/ssd/data/aws-finance/json/ 
+python sync.py --type csv  --out-dir /Volumes/ssd/data/aws-finance/json/
 ```
 
 
