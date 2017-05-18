@@ -56,18 +56,3 @@ Generate stock historical data
 python stock.py --type json  --out-dir /Volumes/ssd/data/aws-finance/json/ --start-date 1999-01-01 --end-date 1999-12-31
 python stock.py --type csv  --out-dir /Volumes/ssd/data/aws-finance/csv/ --start-date 2017-01-01 --end-date 2017-01-20
 ```
-
-Load csv file to database
-```bash
-python load.py --type csv  --data-dir /Volumes/ssd/data/aws-finance/csv/
-```
-
-Synch database last update stock up to today
-```bash
-python sync.py --type csv  --out-dir /Volumes/ssd/data/aws-finance/json/
-```
-
-
-# Further Readings
-
-* https://kennylim.github.io/blog/post/aws-finance/
