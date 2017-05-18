@@ -1,0 +1,21 @@
+
+# stock symbols for sp500, amex, nyse, nasdaq
+finsymbols
+
+# remote data access to get stock data
+pandas_datareader
+
+# command line interface
+click
+
+# progress bar
+tqdm
+
+# YAML parser
+pyyaml
+
+# PostgreSQL adaptor
+psycopg2
+
+# amazon web service sdk
+# boto3
