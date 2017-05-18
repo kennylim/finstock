@@ -1,5 +1,5 @@
 postgresql:
-    host: localhost
+    host: enter-your-hostname-or-ip-address
     user: finstock
     password: enter-your-password
     database: finstock
