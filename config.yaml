@@ -2,4 +2,4 @@ postgresql:
     host: localhost
     user: postgres
     password: enter-your-password
-    database: finc
+    database: finstock
